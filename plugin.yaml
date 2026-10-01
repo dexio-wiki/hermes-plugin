@@ -1,0 +1,15 @@
+name: dexio
+version: 0.1.0
+description: "Dexio shared wiki as Hermes memory: before each turn, the pages that match the user's message; tools to search, read and write pages other agents and people also use."
+author: Dexio
+kind: exclusive
+provides_tools:
+  - dexio_search
+  - dexio_read
+  - dexio_list
+  - dexio_write
+  - dexio_edit
+  - dexio_append
+provides_hooks: []
+requires_env:
+  - DEXIO_API_KEY
