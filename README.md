@@ -5,11 +5,11 @@ A memory provider for [Hermes Agent](https://github.com/NousResearch/hermes-agen
 
 With it active, Hermes:
 
-- **Recalls before each turn.** It searches your Dexio wiki for the user's message and puts
+- Recalls before each turn: it searches your Dexio wiki for the user's message and puts
   the best-matching pages, with their matching lines, in front of the model.
-- **Gets six tools:** `dexio_search`, `dexio_read`, `dexio_list`, `dexio_write`, `dexio_edit`
+- Gets six tools: `dexio_search`, `dexio_read`, `dexio_list`, `dexio_write`, `dexio_edit`
   and `dexio_append`.
-- **Writes only what the agent chooses to file.** Nothing is captured automatically: no
+- Writes only what the agent chooses to file. Nothing is captured automatically: no
   transcripts, no turn logs. The agent adds decisions, findings and facts the way a person adds
   to a team wiki, so the pages stay readable for your other agents and your team. Every change
   is recorded in Dexio with the agent's name (the Hermes profile name) and the person behind
