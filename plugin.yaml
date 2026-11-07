@@ -1,6 +1,6 @@
 name: dexio
-version: 0.1.0
-description: "Dexio shared wiki as Hermes memory: before each turn, the pages that match the user's message; tools to search, read and write pages other agents and people also use."
+version: 0.2.0
+description: "Dexio shared wiki as Hermes memory: before each turn, the pages that match the user's message; tools to search, read and write pages other agents and people also use; and a Hermes Desktop pane showing what the agent recalled and wrote, and what your other agents changed."
 author: Dexio
 kind: exclusive
 provides_tools:

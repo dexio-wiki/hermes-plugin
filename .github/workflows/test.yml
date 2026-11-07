@@ -18,5 +18,17 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python }}
-      - run: pip install pytest
+      # The provider needs only the standard library; fastapi and httpx run the
+      # Desktop pane's backend routes in the tests.
+      - run: pip install pytest fastapi httpx
       - run: python -m pytest -q tests
+
+  desktop:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - run: node --check desktop/plugin.js
+      - run: node --test tests/desktop/plugin.test.mjs

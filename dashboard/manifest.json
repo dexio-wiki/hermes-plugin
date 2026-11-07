@@ -1,0 +1,8 @@
+{
+  "name": "dexio",
+  "label": "Dexio",
+  "description": "What your agents recalled from and wrote to your Dexio wiki.",
+  "version": "0.2.0",
+  "tab": { "hidden": true },
+  "api": "plugin_api.py"
+}
